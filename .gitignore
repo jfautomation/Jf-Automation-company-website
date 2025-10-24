@@ -20,9 +20,8 @@ wp-content/*
 
 # Except these (keep your custom code)
 !wp-content/plugins/
+!wp-content/plugins/**
 !wp-content/themes/
+!wp-content/themes/**
 
-# Optional: ignore other system files
-*.zip
-*.tar.gz
 
