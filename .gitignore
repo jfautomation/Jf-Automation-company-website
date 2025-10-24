@@ -1,0 +1,18 @@
+# WordPress core
+wp-admin/
+wp-includes/
+
+# Sensitive files
+wp-config.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and caches
+*.log
+wp-content/cache/
+wp-content/backups/
+
+# Ignore uploads if you don’t want media in Git
+wp-content/uploads/
