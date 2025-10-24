@@ -13,6 +13,16 @@ Thumbs.db
 *.log
 wp-content/cache/
 wp-content/backups/
-
-# Ignore uploads if you don’t want media in Git
 wp-content/uploads/
+
+# Ignore everything in wp-content
+wp-content/*
+
+# Except these (keep your custom code)
+!wp-content/plugins/
+!wp-content/themes/
+
+# Optional: ignore other system files
+*.zip
+*.tar.gz
+
