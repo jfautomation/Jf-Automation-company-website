@@ -1,27 +1,51 @@
+# -----------------------------
 # WordPress core
+# -----------------------------
 wp-admin/
 wp-includes/
 
+# -----------------------------
 # Sensitive files
+# -----------------------------
 wp-config.php
 
-# OS files
+# -----------------------------
+# OS and system files
+# -----------------------------
 .DS_Store
 Thumbs.db
 
+# -----------------------------
 # Logs and caches
+# -----------------------------
 *.log
 wp-content/cache/
 wp-content/backups/
+
+# -----------------------------
+# Uploads (media files)
+# -----------------------------
+# Ignore uploads unless you want them in Git
 wp-content/uploads/
 
-# Ignore everything in wp-content
+# -----------------------------
+# wp-content
+# -----------------------------
+# Ignore everything in wp-content by default
 wp-content/*
 
-# Except these (keep your custom code)
+# But track themes and plugins (your custom code)
 !wp-content/plugins/
-!wp-content/plugins/**
+!wp-content/plugins/**   # include all subfolders/files in plugins
 !wp-content/themes/
-!wp-content/themes/**
+!wp-content/themes/**    # include all subfolders/files in themes
+
+# -----------------------------
+# Optional archives
+# -----------------------------
+*.zip
+*.tar.gz
+
+
 
 
